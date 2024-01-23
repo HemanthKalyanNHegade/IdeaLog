@@ -15,13 +15,7 @@ connectDB();
 
 const app = express(); // main thing
 
-app.use(cors(
-  {
-    origin:["https://idea-log-ui.vercel.app/"],
-    methods:["POST","GET"],
-    credentials:true
-  }
-));
+app.use(cors());
 
 app.use(express.json()); // to accept json data
 
